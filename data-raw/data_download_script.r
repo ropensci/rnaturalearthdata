@@ -1,14 +1,17 @@
 #data-raw/data_download_script.r
 
 #how data is got into rnaturalearth
-#reproducible workflow allowing package data to be updated e.g. when there are updates to Natural Earth. 
+#reproducible workflow allowing package data to be updated e.g. when there are updates to Natural Earth.
 #just by sourcing this script
 
+#one example file in rnaturalearth
+#scale 110 and 50 files in rntauralearthdata
+#scale 10 files in rntauralearthhires
 
 library(rnaturalearth)
 
-
-countries110 <- ne_download(scale=110, type='countries', category='cultural')
+#countries in rnaturalearth for now
+#countries110 <- ne_download(scale=110, type='countries', category='cultural')
 map_units110 <- ne_download(scale=110, type='map_units', category='cultural')
 sovereignty110 <- ne_download(scale=110, type='sovereignty', category='cultural')
 
@@ -16,20 +19,13 @@ countries50 <- ne_download(scale=50, type='countries', category='cultural')
 map_units50 <- ne_download(scale=50, type='map_units', category='cultural')
 sovereignty50 <- ne_download(scale=50, type='sovereignty', category='cultural')
 
-countries10 <- ne_download(scale=10, type='countries', category='cultural')
-map_units10 <- ne_download(scale=10, type='map_units', category='cultural')
-sovereignty10 <- ne_download(scale=10, type='sovereignty', category='cultural')
-
 states50 <- ne_download(scale=50, type='states', category='cultural')
-states10 <- ne_download(scale=10, type='states', category='cultural')
 
 #not saved yet, points for tiny countries
 tiny_countries110 <- ne_download(scale=110, type='tiny_countries', category='cultural')
 
-#http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/physical/ne_110m_coastline.zip
 coastline110 <- ne_download(scale=110, type='coastline', category='physical')
 coastline50 <- ne_download(scale=50, type='coastline', category='physical')
-coastline10 <- ne_download(scale=10, type='coastline', category='physical')
 
 
 #### todo
@@ -39,7 +35,7 @@ coastline10 <- ne_download(scale=10, type='coastline', category='physical')
 
 #### investigating attribute data, chose not to trim
 
-str(countries110@data)
+#str(countries110@data)
 #'data.frame':	177 obs. of  63 variables:
 str(countries50@data)
 #'data.frame':	241 obs. of  63 variables:
@@ -52,7 +48,7 @@ str(tiny_countries110@data)
 #but its a spatial points dataframe rather than polygons ...
 
 
-#temporary for looking at the data 
+#temporary for looking at the data
 # countries110data <- countries110@data
 # countries50data <- countries50@data
 # map_units110data <- map_units110@data
@@ -68,13 +64,11 @@ str(tiny_countries110@data)
 #257
 
 #which fields to keep
-#i'm thinking it may be better to keep more fields, they take up very little space 
+#decided to keep all fields, they take up very little space
 #and if we don't want to worry about joining it may be useful for users to have them
 #fieldsToKeep <- c('admin','name','iso_a3','pop_est')
-#fieldsToKeep <- c('admin','iso_a3','pop_est')
 
 #remember the difference between 'admin' & 'name' in NatEarth, 'name' tends to be abbreviated
-
 
 #### check polygon geometries (it seems to be no longer be necessary to correct these)
 # require(rgeos)
@@ -155,7 +149,7 @@ str(tiny_countries110@data)
 # states10@data <- data.frame( lapply(states10@data, function(x) iconv(x, "latin1", "ASCII", sub="")))
 
 #to allow same operation on all data objects in the package
-data_object_names <- data(package = "rnaturalearth")[["results"]][,"Item"]
+data_object_names <- data(package = "rnaturalearthdata")[["results"]][,"Item"]
 
 #dangerous code to remove all non-ascii characters
 #todo I might want to do something more intelligent than this
@@ -164,13 +158,13 @@ for (i in 1:length(data_object_names))
 {
   data_name <- data_object_names[i]
   data_object <- eval(parse(text = data_name))
-  
+
   data_object@data <- data.frame( lapply(data_object@data, function(x) iconv(x, "latin1", "ASCII", sub="")))
-  
+
   #but now I want to reallocate back to the named object
   #beware this is dangerous
   eval(parse(text=paste(data_name,"<- data_object")))
-  
+
 }
 
 
@@ -181,33 +175,9 @@ for (i in 1:length(data_object_names))
 for (i in 1:length(data_object_names))
 {
   data_name <- data_object_names[i]
-  #eval(parse(text=paste0("save(",data_name,", file='data/",data_name,".rda'"))) 
+  #eval(parse(text=paste0("save(",data_name,", file='data/",data_name,".rda'")))
   #this sorts compression
-  eval(parse(text=paste0("devtools::use_data(",data_name,", compress='xz', overwrite=TRUE)"))) 
+  eval(parse(text=paste0("devtools::use_data(",data_name,", compress='xz', overwrite=TRUE)")))
 }
-
-## uncomment following lines to save updated data to the package
-
-#devtools::use_data(countries110, compress='xz', overwrite=TRUE)
-# save(countries110, file="data/countries110.rda")
-# save(map_units110, file="data/map_units110.rda")
-# save(sovereignty110, file="data/sovereignty110.rda")
-# 
-# save(countries50, file="data/countries50.rda")
-# save(map_units50, file="data/map_units50.rda")
-# save(sovereignty50, file="data/sovereignty50.rda")
-# 
-# save(countries10, file="data/countries10.rda")
-# save(map_units10, file="data/map_units10.rda")
-# save(sovereignty10, file="data/sovereignty10.rda")
-# 
-# save(states50, file="data/states50.rda")
-# save(states10, file="data/states10.rda")
-# 
-# #save(tiny_countries110, file="data/tiny_countries110.rda")
-# 
-# save(coastline110, file="data/coastline110.rda")
-# save(coastline50, file="data/coastline50.rda")
-# save(coastline10, file="data/coastline10.rda")
 
 
