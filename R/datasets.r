@@ -93,3 +93,22 @@ NULL
 #' @rdname coastlines
 "coastline50"
 
+
+#' tiny countries points from Natural Earth
+#'
+#' small country points at scales 1:110m (small), 1:50m (medium).
+#'
+#' @format A \code{SpatialPointsDataFrame}
+#' @aliases tiny_countries110 tiny_countries50
+#' @name tiny_countries
+NULL
+
+
+#' @source \url{http//www.naturalearthdata.com/download/110m/physical/ne_110m_tiny_countries.zip}
+#' @rdname tiny_countries
+"tiny_countries110"
+
+#' @source \url{http//www.naturalearthdata.com/download/50m/physical/ne_50m_tiny_countries.zip}
+#' @rdname tiny_countries
+"tiny_countries50"
+

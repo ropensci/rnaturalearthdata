@@ -21,8 +21,14 @@ sovereignty50 <- ne_download(scale=50, type='sovereignty', category='cultural')
 
 states50 <- ne_download(scale=50, type='states', category='cultural')
 
-#not saved yet, points for tiny countries
+#points for tiny countries
 tiny_countries110 <- ne_download(scale=110, type='tiny_countries', category='cultural')
+devtools::use_data(tiny_countries110, compress='xz', overwrite=TRUE)
+
+tiny_countries50 <- ne_download(scale=50, type='tiny_countries', category='cultural')
+devtools::use_data(tiny_countries50, compress='xz', overwrite=TRUE)
+#used this & then 2 loops at end of script to add into package
+#data_object_names <- c("tiny_countries110", "tiny_countries50")
 
 coastline110 <- ne_download(scale=110, type='coastline', category='physical')
 coastline50 <- ne_download(scale=50, type='coastline', category='physical')
@@ -169,7 +175,9 @@ for (i in 1:length(data_object_names))
 
 
 #### saving data files to correct folder in the package
-#this relies on working directory being set to root of the package
+# relies on working directory being set to root of the package
+# BEWARE circular that it uses list of existing data in package
+# new data would have to be added outside of this
 
 #the lines below could be replaced by this dangerous eval(parse(text=)) loop
 for (i in 1:length(data_object_names))
