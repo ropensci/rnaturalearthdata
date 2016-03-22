@@ -21,12 +21,14 @@ sovereignty50 <- ne_download(scale=50, type='sovereignty', category='cultural')
 
 states50 <- ne_download(scale=50, type='states', category='cultural')
 
-#points for tiny countries
+#points for tiny countries that don't appear in higher res data
+#not available for scale 10
 tiny_countries110 <- ne_download(scale=110, type='tiny_countries', category='cultural')
-devtools::use_data(tiny_countries110, compress='xz', overwrite=TRUE)
+#devtools::use_data(tiny_countries110, compress='xz', overwrite=TRUE)
 
 tiny_countries50 <- ne_download(scale=50, type='tiny_countries', category='cultural')
-devtools::use_data(tiny_countries50, compress='xz', overwrite=TRUE)
+#devtools::use_data(tiny_countries50, compress='xz', overwrite=TRUE)
+
 #used this & then 2 loops at end of script to add into package
 #data_object_names <- c("tiny_countries110", "tiny_countries50")
 
