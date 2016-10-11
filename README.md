@@ -1,5 +1,6 @@
-rnaturalearthdata
-=================
+[![Travis-CI Build Status](https://travis-ci.org/ropenscilabs/rnaturalearthdata.svg?branch=master)](https://travis-ci.org/ropenscilabs/rnaturalearthdata)
+
+# rnaturalearthdata
 
 An R package to store data for the [rnaturalearth](https://github.com/ropenscilabs/rnaturalearth) package.
 
