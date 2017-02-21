@@ -1,4 +1,4 @@
-#' rnaturalearthdata : World Vector Map Data from Natural Earth Used in rnaturalearth
+#' rnaturalearthdata : World Vector Map Data from Natural Earth Used in 'rnaturalearth'
 #'
 #' holds data used by rnaturalearth package from \href{http://www.naturalearthdata.com/}{Natural Earth}.
 #'
