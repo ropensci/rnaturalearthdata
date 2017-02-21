@@ -2,14 +2,14 @@ First CRAN release after acceptance at rOpenSci.
 
 ---
  
-This is a data package that supports a subsequent package that will be submitted once this package is accepted.
+This is a data package that supports another that will be submitted once this is accepted.
    
 ## Test environments
+* travis-ci 3.3.2 platform: x86_64-pc-linux-gnu
 * win-builder (devel) using R Under development (unstable) (2017-02-18 r72206)
-* ubuntu 12.04 (on travis-ci), R 3.3.0
 
 ## R CMD check results
-* local
+* travis
 0 errors | 0 warnings | 0 notes
 
 *win-builder
