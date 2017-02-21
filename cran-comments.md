@@ -5,14 +5,14 @@ First CRAN release after acceptance at rOpenSci.
 This is a data package that supports another that will be submitted once this is accepted.
    
 ## Test environments
-* travis-ci 3.3.2 platform: x86_64-pc-linux-gnu
+* local windows R3.3.2
+* travis-ci R3.3.2 x86_64-pc-linux-gnu
 * win-builder (devel) using R Under development (unstable) (2017-02-18 r72206)
 
 ## R CMD check results
-* travis
-0 errors | 0 warnings | 0 notes
 
-*win-builder
+0 errors | 0 warnings
+
 1 note
 
 Possibly mis-spelled words in DESCRIPTION:

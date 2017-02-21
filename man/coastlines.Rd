@@ -2,11 +2,11 @@
 % Please edit documentation in R/datasets.r
 \docType{data}
 \name{coastlines}
-\alias{coastline110}
-\alias{coastline50}
 \alias{coastlines}
 \alias{coastlines110}
 \alias{coastlines50}
+\alias{coastline110}
+\alias{coastline50}
 \title{world coastlines from Natural Earth}
 \format{A \code{SpatialLinesDataFrame}}
 \source{
@@ -23,4 +23,3 @@ coastline50
 coastline lines at scales 1:110m (small), 1:50m (medium). 1:10m (large) are in the package rnaturalearthhires.
 }
 \keyword{datasets}
-

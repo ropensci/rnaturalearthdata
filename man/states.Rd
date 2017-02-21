@@ -4,6 +4,7 @@
 \name{states}
 \alias{states}
 \alias{states50}
+\alias{states50}
 \title{state (admin level 1) polygons from Natural Earth}
 \format{A \code{SpatialPolygonsDataFrame}}
 \source{
@@ -20,5 +21,5 @@ For Australia, Brazil, Canada and USA, at 1:50m (medium) resolution. The package
 \describe{
 \item{\code{data}}{A data frame with attributes}
 }}
-\keyword{datasets}
 
+\keyword{datasets}

@@ -5,6 +5,8 @@
 \alias{tiny_countries}
 \alias{tiny_countries110}
 \alias{tiny_countries50}
+\alias{tiny_countries110}
+\alias{tiny_countries50}
 \title{tiny countries points from Natural Earth}
 \format{A \code{SpatialPointsDataFrame}}
 \source{
@@ -21,4 +23,3 @@ tiny_countries50
 small country points at scales 1:110m (small), 1:50m (medium).
 }
 \keyword{datasets}
-

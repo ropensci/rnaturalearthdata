@@ -8,4 +8,3 @@
 \description{
 holds data used by rnaturalearth package from \href{http://www.naturalearthdata.com/}{Natural Earth}.
 }
-
