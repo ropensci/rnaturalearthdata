@@ -4,11 +4,8 @@
 \name{rnaturalearthdata}
 \alias{rnaturalearthdata}
 \alias{rnaturalearthdata-package}
-\title{rnaturalearthdata : world vector maps from Natural Earth}
+\title{rnaturalearthdata : World Vector Map Data from Natural Earth Used in rnaturalearth}
 \description{
-Facilitates world mapping by making \href{http://www.naturalearthdata.com/}{Natural Earth} map data more easily available to R users.
-}
-\seealso{
-\code{\link[rnaturalearth]{ne_countries}} \code{\link[rnaturalearth]{ne_states}} \code{\link[rnaturalearth]{ne_download}}
+holds data used by rnaturalearth package from \href{http://www.naturalearthdata.com/}{Natural Earth}.
 }
 
