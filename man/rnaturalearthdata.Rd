@@ -4,7 +4,7 @@
 \name{rnaturalearthdata}
 \alias{rnaturalearthdata}
 \alias{rnaturalearthdata-package}
-\title{rnaturalearthdata : World Vector Map Data from Natural Earth Used in rnaturalearth}
+\title{rnaturalearthdata : World Vector Map Data from Natural Earth Used in 'rnaturalearth'}
 \description{
 holds data used by rnaturalearth package from \href{http://www.naturalearthdata.com/}{Natural Earth}.
 }
