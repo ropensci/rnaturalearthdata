@@ -1,6 +1,6 @@
 Package: rnaturalearthdata
 Title: World Vector Map Data from Natural Earth Used in 'rnaturalearth'
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: person("Andy", "South", , "southandy@gmail.com", role = c("aut", "cre"))
 Description: Vector map data from <http://www.naturalearthdata.com/>. Access functions are provided in the accompanying package 'rnaturalearth'.
 License: CC0
