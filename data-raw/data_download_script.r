@@ -5,8 +5,8 @@
 #just by sourcing this script
 
 #one example file in rnaturalearth
-#scale 110 and 50 files in rntauralearthdata
-#scale 10 files in rntauralearthhires
+#scale 110 and 50 files in rnaturalearthdata
+#scale 10 files in rnaturalearthhires
 
 library(rnaturalearth)
 
