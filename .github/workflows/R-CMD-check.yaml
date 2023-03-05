@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-            - name: Fetch release version
+      - name: Fetch release version
         run: |
           curl -sL https://api.github.com/repos/nvkelso/natural-earth-vector/releases/latest | \
           jq -r ".tag_name" > release-versions/natural-earth-vector-latest.txt
