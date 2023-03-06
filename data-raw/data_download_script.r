@@ -11,7 +11,7 @@
 library(rnaturalearth)
 
 #countries in rnaturalearth for now
-#countries110 <- ne_download(scale=110, type='countries', category='cultural')
+countries110 <- ne_download(scale=110, type='countries', category='cultural')
 map_units110 <- ne_download(scale=110, type='map_units', category='cultural')
 sovereignty110 <- ne_download(scale=110, type='sovereignty', category='cultural')
 
@@ -45,13 +45,13 @@ coastline50 <- ne_download(scale=50, type='coastline', category='physical')
 
 #str(countries110@data)
 #'data.frame':	177 obs. of  63 variables:
-str(countries50@data)
+#str(countries50@data)
 #'data.frame':	241 obs. of  63 variables:
-str(map_units110@data)
+#str(map_units110@data)
 #'data.frame':	183 obs. of  63 variables:
-str(sovereignty110@data)
+#str(sovereignty110@data)
 #'data.frame':	171 obs. of  63 variables:
-str(tiny_countries110@data)
+#str(tiny_countries110@data)
 #'data.frame':	37 obs. of  64 variables:
 #but its a spatial points dataframe rather than polygons ...
 
@@ -84,7 +84,7 @@ str(tiny_countries110@data)
 
 
 #to allow same operation on all data objects in the package
-data_object_names <- data(package = "rnaturalearthdata")[["results"]][,"Item"]
+#data_object_names <- data(package = "rnaturalearthdata")[["results"]][,"Item"]
 
 
 #### saving data files to correct folder in the package
@@ -93,12 +93,21 @@ data_object_names <- data(package = "rnaturalearthdata")[["results"]][,"Item"]
 # new data would have to be added outside of this
 
 #the lines below could be replaced by this dangerous eval(parse(text=)) loop
-for (i in 1:length(data_object_names))
-{
-  data_name <- data_object_names[i]
-  #eval(parse(text=paste0("save(",data_name,", file='data/",data_name,".rda'")))
-  #this sorts compression
-  eval(parse(text=paste0("devtools::use_data(",data_name,", compress='xz', overwrite=TRUE)")))
-}
-
-
+# for (i in 1:length(data_object_names))
+# {
+#   data_name <- data_object_names[i]
+#   #eval(parse(text=paste0("save(",data_name,", file='data/",data_name,".rda'")))
+#   #this sorts compression
+#   eval(parse(text=paste0("devtools::use_data(",data_name,", compress='xz', overwrite=TRUE)")))
+# }
+usethis::use_data(map_units110, compress='xz', overwrite=TRUE)
+usethis::use_data(sovereignty110, compress='xz', overwrite=TRUE)
+usethis::use_data(countries110, compress='xz', overwrite=TRUE)
+usethis::use_data(countries50, compress='xz', overwrite=TRUE)
+usethis::use_data(map_units50, compress='xz', overwrite=TRUE)
+usethis::use_data(sovereignty50, compress='xz', overwrite=TRUE)
+usethis::use_data(states50, compress='xz', overwrite=TRUE)
+usethis::use_data(tiny_countries110, compress='xz', overwrite=TRUE)
+usethis::use_data(tiny_countries50, compress='xz', overwrite=TRUE)
+usethis::use_data(coastline110, compress='xz', overwrite=TRUE)
+usethis::use_data(coastline50, compress='xz', overwrite=TRUE)
