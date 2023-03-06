@@ -1,7 +1,27 @@
 Package: rnaturalearthdata
 Title: World Vector Map Data from Natural Earth Used in 'rnaturalearth'
 Version: 0.2.1
-Authors@R: person("Andy", "South", , "southandy@gmail.com", role = c("aut", "cre"))
+Authors@R: c(
+  person(
+    family = "South",
+    given = "Andy",
+    email = "southandy@gmail.com",
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0003-4051-6135")
+  ),
+  person(
+    family = "Michael",
+    given = "Schramm",
+    email = "mpschramm@gmail.com",
+    role = c("aut")
+  ),
+  person(
+    family = "Massicotte",
+    given = "Philippe",
+    email = "pmassicotte@hotmail.com",
+    role = c("aut"),
+    comment = c(ORCID = "0000-0002-5919-4116")
+  ))
 Description: Vector map data from <http://www.naturalearthdata.com/>. Access functions are provided in the accompanying package 'rnaturalearth'.
 License: CC0
 LazyData: true
