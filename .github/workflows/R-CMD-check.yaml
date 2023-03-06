@@ -56,4 +56,8 @@ jobs:
         if: steps.git-check.outputs.modified == 'true'
         run: |
           R -e "usethis::use_version('patch')"
+
+      - name: Commit and push version
+        if: steps.git-check.outputs.modified == 'true'
+        run: |
           git push origin
