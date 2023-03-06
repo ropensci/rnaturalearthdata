@@ -60,4 +60,6 @@ jobs:
       - name: Commit and push version
         if: steps.git-check.outputs.modified == 'true'
         run: |
+          git add DESCRIPTION
+          git commit -m "Bump package version"
           git push origin
