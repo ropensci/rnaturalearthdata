@@ -54,4 +54,6 @@ jobs:
 
       - name: Bump package version
         if: steps.git-check.outputs.modified == 'true'
-        run: R -e "usethis::use_version('patch')"
+        run: |
+          R -e "usethis::use_version('patch')"
+          git push origin
