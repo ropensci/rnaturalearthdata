@@ -1,3 +1,5 @@
+# rnaturalearthdata 1.0.0
+
 rnaturalearthdata 0.2.1 2023-03-06
 ===================
 
