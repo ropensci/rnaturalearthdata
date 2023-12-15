@@ -1,28 +1,20 @@
-First CRAN release after acceptance at rOpenSci.
+## revdepcheck results
 
----
- 
-This is a data package that supports another that will be submitted once this is accepted.
-   
-## Test environments
-* local windows R3.3.2
-* travis-ci R3.3.2 x86_64-pc-linux-gnu
-* win-builder (devel) using R Under development (unstable) (2017-02-18 r72206)
+We checked 18 reverse dependencies (13 from CRAN + 5 from Bioconductor), comparing R CMD check results across CRAN and dev versions of this package.
+
+- We saw 0 new problems
+- We failed to check 0 packages
 
 ## R CMD check results
 
-0 errors | 0 warnings
+- The package was tested on:
 
-1 note
+  - os: macos-latest with r: 'release'
+  - os: windows-latest with r: 'release'
+  - os: ubuntu-latest with r: 'devel'
+  - os: ubuntu-latest with r: 'release'
+  - os: ubuntu-latest with r: 'oldrel-1'
 
-Possibly mis-spelled words in DESCRIPTION:
-  rnaturalearth (2:57)
+- The package was tested on rhub and on winbuilder.
 
-The Title field should be in title case, current version then in title case:
-'World Vector Map Data from Natural Earth Used in rnaturalearth'
-'World Vector Map Data from Natural Earth Used in Rnaturalearth'
-
-rnaturalearth is the name of another package ready to submit once this data package has been accepted.
-
-## Downstream dependencies
-none
+- There were no notes.

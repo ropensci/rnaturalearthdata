@@ -2,27 +2,32 @@
 
 ## Breaking changes
 
-This is a breaking changes release that ends support to `sp` object in favour of more modern interfaces (`sf` and `terra`). Although that `sp` is still available on CRAN, it is no longer being actively developed (https://geocompx.org/post/2023/rgdal-retirement/). This is the main reason that motivated the choice to transition toward `sf` (the default) and `terra`.
+This release introduces breaking changes by discontinuing support for the `sp` object in favor of `sf`. Although the `sp` object is still available on CRAN, it is no longer being actively developed (https://geocompx.org/post/2023/rgdal-retirement/). This is the main reason that prompted the decision to transition to `sf`.
 
-Users can choose either get an `sf` or `SpatVector` using the `returnclass` argument:
+Here is the list of affected objects that are now returned as Spatial Feature (`sf`):
+
+| coastline110      | world coastlines from Natural Earth               |
+| ----------------- | ------------------------------------------------- |
+| coastline50       | world coastlines from Natural Earth               |
+| countries110      | world country polygons from Natural Earth         |
+| countries50       | world country polygons from Natural Earth         |
+| map_units110      | world map_unit polygons from Natural Earth        |
+| map_units50       | world map_unit polygons from Natural Earth        |
+| sovereignty110    | world sovereignty polygons from Natural Earth     |
+| sovereignty50     | world sovereignty polygons from Natural Earth     |
+| states50          | state (admin level 1) polygons from Natural Earth |
+| tiny_countries110 | tiny countries points from Natural Earth          |
+| tiny_countries50  | tiny countries points from Natural Earth          |
+
+If changing the return type to `sf` causes too many issues with your existing code, you can still convert it back to `sp`.
 
 ```
-ne_countries(returnclass = "sf")
-ne_countries(returnclass = "sv")
-```
-
-All spatial objects in the package (`countries10`, `map_units10`, `sovereignty10`, `states10`, `coastline10`) are now objects of class `sf`.
-
-If changing the return type to `sf` creates too many problems to your existing code, you can still convert it back to `sp` :
-
-```
-
 # option 1
-sf::as_Spatial(ojbcountries)
+sf::as_Spatial(x)
 
 
 # option 2
-as(countries, "Spatial")
+as(x, "Spatial")
 ```
 
 More information about the retirement of `rgdal`, `rgeos` and `maptools`: https://r-spatial.org/r/2022/04/12/evolution.html
