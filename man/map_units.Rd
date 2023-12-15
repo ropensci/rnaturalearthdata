@@ -7,7 +7,7 @@
 \alias{map_units50}
 \title{world map_unit polygons from Natural Earth}
 \format{
-A \code{SpatialPolygonsDataFrame}
+An object of class `sf`
 
 An object of class \code{sf} (inherits from \code{data.frame}) with 183 rows and 169 columns.
 

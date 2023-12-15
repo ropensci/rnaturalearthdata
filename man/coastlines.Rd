@@ -9,7 +9,7 @@
 \alias{coastline50}
 \title{world coastlines from Natural Earth}
 \format{
-A \code{SpatialLinesDataFrame}
+An object of class `sf`
 
 An object of class \code{sf} (inherits from \code{data.frame}) with 134 rows and 4 columns.
 

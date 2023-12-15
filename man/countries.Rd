@@ -7,7 +7,7 @@
 \alias{countries50}
 \title{world country polygons from Natural Earth}
 \format{
-A \code{SpatialPolygonsDataFrame}
+An object of class `sf`
 
 An object of class \code{sf} (inherits from \code{data.frame}) with 177 rows and 169 columns.
 
@@ -24,7 +24,8 @@ countries110
 countries50
 }
 \description{
-at scales 1:110m (small) and 1:50m (medium). 1:10m (large) are in the package rnaturalearthhires.
+at scales 1:110m (small) and 1:50m (medium). 1:10m (large) are in the
+package rnaturalearthhires.
 }
 \section{Slots}{
 

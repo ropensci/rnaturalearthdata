@@ -6,7 +6,7 @@
 \alias{states50}
 \title{state (admin level 1) polygons from Natural Earth}
 \format{
-A \code{SpatialPolygonsDataFrame}
+An object of class `sf`
 
 An object of class \code{sf} (inherits from \code{data.frame}) with 294 rows and 122 columns.
 }

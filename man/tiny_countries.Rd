@@ -7,7 +7,7 @@
 \alias{tiny_countries50}
 \title{tiny countries points from Natural Earth}
 \format{
-A \code{SpatialPointsDataFrame}
+An object of class `sf`
 
 An object of class \code{sf} (inherits from \code{data.frame}) with 37 rows and 171 columns.
 

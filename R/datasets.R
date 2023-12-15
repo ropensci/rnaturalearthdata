@@ -1,14 +1,19 @@
 #' world country polygons from Natural Earth
 #'
-#' at scales 1:110m (small) and 1:50m (medium). 1:10m (large) are in the package rnaturalearthhires.
+#' at scales 1:110m (small) and 1:50m (medium). 1:10m (large) are in the
+#' package rnaturalearthhires.
 #'
-#' @format A \code{SpatialPolygonsDataFrame}
+#' @format An object of class `sf`
+#'
 #' @slot data A data frame with country attributes
+#'
 #' @aliases countries110 countries50
+#'
 #' @name countries
 NULL
 
-#' @source \url{http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_countries.zip}
+#' @source
+#' \url{http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_countries.zip}
 #' @rdname countries
 "countries110"
 
@@ -22,7 +27,7 @@ NULL
 #' map_unit polygons at scales 1:110m (small), 1:50m (medium). 1:10m (large) are in the package rnaturalearthhires.
 #' There are more map_units than countries e.g. United Kingdom is split into England, Scotland, Wales and Northern Ireland.
 #'
-#' @format A \code{SpatialPolygonsDataFrame}
+#' @format An object of class `sf`
 #' @slot data A data frame with attributes
 #' @name map_units
 #' @aliases map_units110 map_units50
@@ -44,7 +49,7 @@ NULL
 #' sovereignty polygons at scales 1:110m (small), 1:50m (medium). 1:10m (large) are in the package rnaturalearthhires.
 #' There are fewer sovereign states than countries e.g. the Falkland Islands are included with the United Kingdom.
 #'
-#' @format A \code{SpatialPolygonsDataFrame}
+#' @format An object of class `sf`
 #' @slot data A data frame with attributes
 #' @aliases sovereignty110 sovereignty50
 #' @name sovereignty
@@ -63,7 +68,7 @@ NULL
 #'
 #' For Australia, Brazil, Canada and USA, at 1:50m (medium) resolution. The package rnaturalearthhires has all world countries at 1:10m (high) resolution.
 #'
-#' @format A \code{SpatialPolygonsDataFrame}
+#' @format An object of class `sf`
 #' @slot data A data frame with attributes
 #' @aliases states50
 #' @name states
@@ -79,7 +84,7 @@ NULL
 #'
 #' coastline lines at scales 1:110m (small), 1:50m (medium). 1:10m (large) are in the package rnaturalearthhires.
 #'
-#' @format A \code{SpatialLinesDataFrame}
+#' @format An object of class `sf`
 #' @aliases coastlines110 coastlines50
 #' @name coastlines
 NULL
@@ -98,7 +103,7 @@ NULL
 #'
 #' small country points at scales 1:110m (small), 1:50m (medium).
 #'
-#' @format A \code{SpatialPointsDataFrame}
+#' @format An object of class `sf`
 #' @aliases tiny_countries110 tiny_countries50
 #' @name tiny_countries
 NULL
@@ -111,4 +116,3 @@ NULL
 #' @source \url{http//www.naturalearthdata.com/download/50m/physical/ne_50m_tiny_countries.zip}
 #' @rdname tiny_countries
 "tiny_countries50"
-

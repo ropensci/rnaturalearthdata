@@ -26,12 +26,12 @@ Description: Vector map data from <https://www.naturalearthdata.com/>. Access fu
 License: CC0
 LazyData: true
 LazyDataCompression: xz
+Encoding: UTF-8
 URL: https://docs.ropensci.org/rnaturalearthdata/, https://docs.ropensci.org/rnaturalearthdata/
 BugReports: https://github.com/ropensci/rnaturalearthdata/issues
 Depends:
     R (>= 3.1.1)
 Imports:
-    sp (>= 1.0.15)
 Suggests:
     knitr (>= 1.12.3),
     testthat (>= 0.9.1)

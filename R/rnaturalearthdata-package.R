@@ -5,7 +5,6 @@
 #' @name rnaturalearthdata
 #' @docType package
 # @seealso \code{\link[rnaturalearth]{ne_countries}} \code{\link[rnaturalearth]{ne_states}} \code{\link[rnaturalearth]{ne_download}}
-#' @import sp
 NULL
 
 # Hide variables from R CMD check
