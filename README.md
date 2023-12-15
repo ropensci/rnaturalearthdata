@@ -1,3 +1,9 @@
+  <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/ropensci/rnaturalearthdata/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ropensci/rnaturalearthdata/actions/workflows/R-CMD-check.yaml)
+
+  <!-- badges: end -->
+
 # rnaturalearthdata
 
 An R package to store data for the [rnaturalearth](https://github.com/ropensci/rnaturalearth) package.
