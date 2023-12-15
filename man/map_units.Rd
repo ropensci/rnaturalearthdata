@@ -5,10 +5,14 @@
 \alias{map_units}
 \alias{map_units110}
 \alias{map_units50}
-\alias{map_units110}
-\alias{map_units50}
 \title{world map_unit polygons from Natural Earth}
-\format{A \code{SpatialPolygonsDataFrame}}
+\format{
+A \code{SpatialPolygonsDataFrame}
+
+An object of class \code{sf} (inherits from \code{data.frame}) with 183 rows and 169 columns.
+
+An object of class \code{sf} (inherits from \code{data.frame}) with 265 rows and 169 columns.
+}
 \source{
 \url{http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_map_units.zip}
 

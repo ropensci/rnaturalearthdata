@@ -5,10 +5,14 @@
 \alias{tiny_countries}
 \alias{tiny_countries110}
 \alias{tiny_countries50}
-\alias{tiny_countries110}
-\alias{tiny_countries50}
 \title{tiny countries points from Natural Earth}
-\format{A \code{SpatialPointsDataFrame}}
+\format{
+A \code{SpatialPointsDataFrame}
+
+An object of class \code{sf} (inherits from \code{data.frame}) with 37 rows and 171 columns.
+
+An object of class \code{sf} (inherits from \code{data.frame}) with 76 rows and 171 columns.
+}
 \source{
 \url{http//www.naturalearthdata.com/download/110m/physical/ne_110m_tiny_countries.zip}
 

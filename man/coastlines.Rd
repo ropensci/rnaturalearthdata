@@ -8,7 +8,13 @@
 \alias{coastline110}
 \alias{coastline50}
 \title{world coastlines from Natural Earth}
-\format{A \code{SpatialLinesDataFrame}}
+\format{
+A \code{SpatialLinesDataFrame}
+
+An object of class \code{sf} (inherits from \code{data.frame}) with 134 rows and 4 columns.
+
+An object of class \code{sf} (inherits from \code{data.frame}) with 1428 rows and 4 columns.
+}
 \source{
 \url{http//www.naturalearthdata.com/download/110m/physical/ne_110m_coastline.zip}
 

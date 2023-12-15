@@ -5,10 +5,14 @@
 \alias{sovereignty}
 \alias{sovereignty110}
 \alias{sovereignty50}
-\alias{sovereignty110}
-\alias{sovereignty50}
 \title{world sovereignty polygons from Natural Earth}
-\format{A \code{SpatialPolygonsDataFrame}}
+\format{
+A \code{SpatialPolygonsDataFrame}
+
+An object of class \code{sf} (inherits from \code{data.frame}) with 171 rows and 169 columns.
+
+An object of class \code{sf} (inherits from \code{data.frame}) with 201 rows and 169 columns.
+}
 \source{
 \url{http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_sovereignty.zip}
 

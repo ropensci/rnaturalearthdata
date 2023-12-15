@@ -1,6 +1,6 @@
 #' rnaturalearthdata : World Vector Map Data from Natural Earth Used in 'rnaturalearth'
 #'
-#' holds data used by rnaturalearth package from \href{http://www.naturalearthdata.com/}{Natural Earth}.
+#' holds data used by rnaturalearth package from \href{https://www.naturalearthdata.com/}{Natural Earth}.
 #'
 #' @name rnaturalearthdata
 #' @docType package
@@ -10,10 +10,11 @@ NULL
 
 # Hide variables from R CMD check
 if (getRversion() >= "2.15.1") {
-  utils::globalVariables(c("countries110", "countries50",
-                           "map_units110", "map_units50",
-                           "sovereignty110", "sovereignty50",
-                           "coastline110", "coastline50",
-                           "states50"
-                           ))
+  utils::globalVariables(c(
+    "countries110", "countries50",
+    "map_units110", "map_units50",
+    "sovereignty110", "sovereignty50",
+    "coastline110", "coastline50",
+    "states50"
+  ))
 }
