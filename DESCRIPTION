@@ -27,7 +27,7 @@ License: CC0
 LazyData: true
 LazyDataCompression: xz
 Encoding: UTF-8
-URL: https://docs.ropensci.org/rnaturalearthdata/, https://docs.ropensci.org/rnaturalearthdata/
+URL: https://docs.ropensci.org/rnaturalearthdata/, https://github.com/ropensci/rnaturalearthdata
 BugReports: https://github.com/ropensci/rnaturalearthdata/issues
 Depends:
     R (>= 3.1.1)
