@@ -9,3 +9,4 @@
 
 ^\.github$
 ^release-versions$
+^CRAN-SUBMISSION$

@@ -11,7 +11,7 @@ An object of class `sf`
 An object of class \code{sf} (inherits from \code{data.frame}) with 294 rows and 122 columns.
 }
 \source{
-\url{http//www.naturalearthdata.com/download/50m/cultural/ne_50m_admin_1_states.zip}
+\url{https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/cultural/ne_50m_admin_1_states_provinces.zip}
 }
 \usage{
 states50

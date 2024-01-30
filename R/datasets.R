@@ -13,11 +13,11 @@
 NULL
 
 #' @source
-#' \url{http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_countries.zip}
+#' \url{https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_countries.zip}
 #' @rdname countries
 "countries110"
 
-#' @source \url{http//www.naturalearthdata.com/download/50m/cultural/ne_50m_admin_0_countries.zip}
+#' @source \url{https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/cultural/ne_50m_admin_0_countries.zip}
 #' @rdname countries
 "countries50"
 
@@ -34,12 +34,12 @@ NULL
 NULL
 
 
-#' @source \url{http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_map_units.zip}
+#' @source \url{https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_map_units.zip}
 #' @rdname map_units
 "map_units110"
 
 
-#' @source \url{http//www.naturalearthdata.com/download/50m/cultural/ne_50m_admin_0_map_units.zip}
+#' @source \url{https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/cultural/ne_50m_admin_0_map_units.zip}
 #' @rdname map_units
 "map_units50"
 
@@ -55,11 +55,11 @@ NULL
 #' @name sovereignty
 NULL
 
-#' @source \url{http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_sovereignty.zip}
+#' @source \url{https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_sovereignty.zip}
 #' @rdname sovereignty
 "sovereignty110"
 
-#' @source \url{http//www.naturalearthdata.com/download/50m/cultural/ne_50m_admin_0_sovereignty.zip}
+#' @source \url{https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/cultural/ne_50m_admin_0_sovereignty.zip}
 #' @rdname sovereignty
 "sovereignty50"
 
@@ -75,7 +75,7 @@ NULL
 NULL
 
 
-#' @source \url{http//www.naturalearthdata.com/download/50m/cultural/ne_50m_admin_1_states.zip}
+#' @source \url{https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/cultural/ne_50m_admin_1_states_provinces.zip}
 #' @rdname states
 "states50"
 
@@ -90,11 +90,11 @@ NULL
 NULL
 
 
-#' @source \url{http//www.naturalearthdata.com/download/110m/physical/ne_110m_coastline.zip}
+#' @source \url{https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/physical/ne_110m_coastline.zip}
 #' @rdname coastlines
 "coastline110"
 
-#' @source \url{http//www.naturalearthdata.com/download/50m/physical/ne_50m_coastline.zip}
+#' @source \url{https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_coastline.zip}
 #' @rdname coastlines
 "coastline50"
 
@@ -109,10 +109,10 @@ NULL
 NULL
 
 
-#' @source \url{http//www.naturalearthdata.com/download/110m/physical/ne_110m_tiny_countries.zip}
+#' @source \url{https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_tiny_countries.zip}
 #' @rdname tiny_countries
 "tiny_countries110"
 
-#' @source \url{http//www.naturalearthdata.com/download/50m/physical/ne_50m_tiny_countries.zip}
+#' @source \url{https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/cultural/ne_50m_admin_0_tiny_countries.zip}
 #' @rdname tiny_countries
 "tiny_countries50"

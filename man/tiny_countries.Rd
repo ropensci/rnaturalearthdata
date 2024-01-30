@@ -14,9 +14,9 @@ An object of class \code{sf} (inherits from \code{data.frame}) with 37 rows and 
 An object of class \code{sf} (inherits from \code{data.frame}) with 76 rows and 171 columns.
 }
 \source{
-\url{http//www.naturalearthdata.com/download/110m/physical/ne_110m_tiny_countries.zip}
+\url{https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_tiny_countries.zip}
 
-\url{http//www.naturalearthdata.com/download/50m/physical/ne_50m_tiny_countries.zip}
+\url{https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/cultural/ne_50m_admin_0_tiny_countries.zip}
 }
 \usage{
 tiny_countries110

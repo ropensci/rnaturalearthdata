@@ -1,10 +1,5 @@
-#' rnaturalearthdata : World Vector Map Data from Natural Earth Used in 'rnaturalearth'
-#'
-#' holds data used by rnaturalearth package from \href{https://www.naturalearthdata.com/}{Natural Earth}.
-#'
-#' @name rnaturalearthdata
-#' @docType package
-# @seealso \code{\link[rnaturalearth]{ne_countries}} \code{\link[rnaturalearth]{ne_states}} \code{\link[rnaturalearth]{ne_download}}
+#' @keywords internal
+"_PACKAGE"
 NULL
 
 # Hide variables from R CMD check

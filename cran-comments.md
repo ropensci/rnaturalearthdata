@@ -1,3 +1,7 @@
+## Resubmission
+
+This resubmission fixes invalid file URIs.
+
 ## New maintainer
 
 Hi,

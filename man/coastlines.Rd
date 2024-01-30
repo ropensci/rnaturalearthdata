@@ -16,9 +16,9 @@ An object of class \code{sf} (inherits from \code{data.frame}) with 134 rows and
 An object of class \code{sf} (inherits from \code{data.frame}) with 1428 rows and 4 columns.
 }
 \source{
-\url{http//www.naturalearthdata.com/download/110m/physical/ne_110m_coastline.zip}
+\url{https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/physical/ne_110m_coastline.zip}
 
-\url{http//www.naturalearthdata.com/download/50m/physical/ne_50m_coastline.zip}
+\url{https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_coastline.zip}
 }
 \usage{
 coastline110
