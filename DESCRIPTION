@@ -6,7 +6,7 @@ Authors@R: c(
     family = "South",
     given = "Andy",
     email = "southandy@gmail.com",
-    role = c("aut", "cre"),
+    role = c("aut"),
     comment = c(ORCID = "0000-0003-4051-6135")
   ),
   person(
@@ -19,7 +19,7 @@ Authors@R: c(
     family = "Massicotte",
     given = "Philippe",
     email = "pmassicotte@hotmail.com",
-    role = c("aut"),
+    role = c("aut", "cre"),
     comment = c(ORCID = "0000-0002-5919-4116")
   ))
 Description: Vector map data from <https://www.naturalearthdata.com/>. Access functions are provided in the accompanying package 'rnaturalearth'.
