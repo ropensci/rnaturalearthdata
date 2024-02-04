@@ -1,6 +1,6 @@
 ## Resubmission
 
-This resubmission fixes invalid file URIs.
+This resubmission fixes reverse dependencies in himach and BeeBCD packages. It should passes revdep checks now.
 
 ## New maintainer
 
