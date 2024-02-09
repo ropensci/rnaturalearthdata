@@ -1,3 +1,5 @@
+# rnaturalearthdata (development version)
+
 # rnaturalearthdata 1.0.0
 
 ## Breaking changes
