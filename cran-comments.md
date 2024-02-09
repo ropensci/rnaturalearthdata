@@ -1,6 +1,6 @@
 ## Resubmission
 
-This resubmission fixes invalid file URIs.
+There 1 reverse dependency that failed (BeeBDC). The maintainer have been contacted and ready to submit an update to CRAN as soon as rnaturealearthdata is accepted (see https://github.com/jbdorey/BeeBDC/issues/10#issuecomment-1935177189).
 
 ## New maintainer
 
@@ -33,10 +33,19 @@ can do anything else.
 
 ## revdepcheck results
 
-We checked 18 reverse dependencies (13 from CRAN + 5 from Bioconductor), comparing R CMD check results across CRAN and dev versions of this package.
+We checked 19 reverse dependencies, comparing R CMD check results across CRAN and dev versions of this package.
 
-- We saw 0 new problems
+- We saw 1 new problems
 - We failed to check 0 packages
+
+Issues with CRAN packages are summarised below.
+
+### New problems
+
+(This reports the first line of each new failure)
+
+- BeeBDC
+  checking tests ...
 
 ## R CMD check results
 
